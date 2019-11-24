@@ -24,18 +24,19 @@ jobs:
       - run: npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-  # Deploy-To-GitHub-Package-Registry:
-  #   runs-on: ubuntu-latest
-  #   name: Deploy to GPR
-  #   steps:
-  #     - uses: actions/checkout@v1
-  #     - uses: actions/setup-node@v1.2.0
-  #       with:
-  #         node-version: '10.x'
-  #         registry-url: 'https://npm.pkg.github.com'
-  #     - run: node --version
-  #     - run: npm ci
-  #     - run: npm run rescope @vajahath
-  #     - run: npm publish
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
+
+  Deploy-To-GitHub-Package-Registry:
+    runs-on: ubuntu-latest
+    name: Deploy to GPR
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1.2.0
+        with:
+          node-version: '10.x'
+          registry-url: 'https://npm.pkg.github.com'
+      - run: node --version
+      - run: npm ci
+      - run: npm run rescope @vajahath
+      - run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
