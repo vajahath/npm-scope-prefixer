@@ -17,7 +17,7 @@
     "url": "git+https://github.com/vajahath/npm-scope-prefixer.git"
   },
   "engines": {
-    "node": ">=8"
+    "node": ">=10"
   },
   "author": "",
   "license": "ISC",

@@ -1,5 +1,4 @@
 import { readPackageJson, extractName, prefixScope, updateFile } from './utils';
-import normalize = require('normalize-path');
 
 export async function scopePrefixer(
   scope: string | undefined,
@@ -7,9 +6,6 @@ export async function scopePrefixer(
 ) {
   if (!scope) {
     throw new Error('Please provide scope');
-  }
-  if (pkgJsonPath) {
-    pkgJsonPath = normalize(pkgJsonPath);
   }
 
   const pkg = await readPackageJson(pkgJsonPath);
