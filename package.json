@@ -16,6 +16,9 @@
     "type": "git",
     "url": "git+https://github.com/vajahath/npm-scope-prefixer.git"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -25,6 +28,7 @@
   "devDependencies": {
     "@types/jest": "^24.0.23",
     "@types/node": "^12.12.12",
+    "@types/normalize-path": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^2.8.0",
     "@typescript-eslint/parser": "^2.8.0",
     "eslint": "^6.7.0",
@@ -32,6 +36,7 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "commander": "^4.0.1"
+    "commander": "^4.0.1",
+    "normalize-path": "^3.0.0"
   }
 }

@@ -40,7 +40,7 @@ describe('testing package.json reader', () => {
     // should read this packages package.json file
     const pkg = await readPackageJson();
     expect(typeof pkg).toBe('object');
-    expect(pkg.name).toBe('npm-scope-prefixer');
+    expect(pkg.name).toBe('@vaju/npm-scope-prefixer');
   });
 
   test('testing provided params - type 1', async () => {
