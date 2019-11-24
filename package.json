@@ -19,8 +19,8 @@
   "engines": {
     "node": ">=10"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Vajahath Ahmed <vajuoff.1@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/vajahath/npm-scope-prefixer/issues"
   },

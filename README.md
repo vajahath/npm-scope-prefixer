@@ -2,4 +2,12 @@
 
 ![](https://github.com/vajahath/npm-scope-prefixer/workflows/build-and-test/badge.svg)
 
-CLI tool to prefix scope on npm packages, helpful for deploying to multiple registries with different scope.
+CLI/API tool to prefix scope on npm packages, helpful for deploying to multiple npm registries with different scope.
+
+## Install
+
+From npm,
+
+```sh
+npm i -g @vaju/npm-scope-prefixer
+```

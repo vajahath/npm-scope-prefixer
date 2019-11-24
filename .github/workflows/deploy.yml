@@ -22,7 +22,7 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run rescope @vaju
-      - run: npm publish --access=public
+      - run: ls && npm publish --access=public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -39,6 +39,6 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run rescope @vajahath
-      - run: npm publish
+      - run: ls && npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GH_TOKEN }}
