@@ -1,10 +1,12 @@
 {
   "name": "@vaju/npm-scope-prefixer",
-  "version": "1.0.2",
-  "description": "CLI tool to prefix scope on npm packages, helpful for deploying to multiple registries with different scope.",
+  "version": "1.0.3",
+  "description": "CLI tool to prefix scope on npm packages, helpful for deploying to multiple registries with different scopes.",
   "main": "index.js",
   "directories": {
-    "test": "tests"
+    "test": "tests",
+    "bin": "dist/bin",
+    "lib": "dist"
   },
   "bin": "./dist/bin/npm-scope-prefixer.js",
   "scripts": {
