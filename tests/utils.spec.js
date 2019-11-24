@@ -64,7 +64,7 @@ describe('testing package.json reader', () => {
 
   test('testing invalid package', async () => {
     // windows
-    await expect(readPackageJson('tests\\_invalid-pkg.json')).rejects.toThrow(
+    await expect(readPackageJson('tests\\_invalid-pkg.xjson')).rejects.toThrow(
       SyntaxError
     );
   });

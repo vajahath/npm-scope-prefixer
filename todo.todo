@@ -1,0 +1,3 @@
+[x] prettier
+[x] eslint
+[x] integrate these in CI

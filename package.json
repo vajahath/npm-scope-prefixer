@@ -1,8 +1,9 @@
 {
   "name": "@vaju/npm-scope-prefixer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "CLI tool to prefix scope on npm packages, helpful for deploying to multiple registries with different scopes.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "directories": {
     "test": "tests",
     "bin": "dist/bin",
@@ -12,7 +13,8 @@
   "scripts": {
     "test": "npm run build && jest --notify --coverage",
     "build": "tsc",
-    "rescope": "node ./dist/bin/npm-scope-prefixer -s"
+    "rescope": "node ./dist/bin/npm-scope-prefixer -s",
+    "lint": "eslint src/**/* tests/**/* && prettier src/**/* tests/**/* -l"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,7 @@
     "@typescript-eslint/parser": "^2.8.0",
     "eslint": "^6.7.0",
     "jest": "^24.9.0",
+    "prettier": "^1.19.1",
     "typescript": "^3.7.2"
   },
   "dependencies": {

@@ -16,7 +16,7 @@ npm i -g @vaju/npm-scope-prefixer
 
 From [Github Package Registry](https://github.com/vajahath/npm-scope-prefixer/packages). ([Guide](https://help.github.com/en/github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages)).
 
-_(✔ Type definitions included)_
+_(✔ Type definitions included for TypeScript)_
 
 ## CLI Usage
 
