@@ -1,8 +1,8 @@
 #! /usr/bin/env node
 
+import '../update-notifier';
 import { Command } from 'commander';
 import { scopePrefixer } from '..';
-
 const pkg = require('../../package.json');
 
 const program = new Command();
