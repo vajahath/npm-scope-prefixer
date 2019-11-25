@@ -1,5 +1,7 @@
 # npm-scope-prefixer
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/vajahath/npm-scope-prefixer.svg)](https://greenkeeper.io/)
+
 ![](https://github.com/vajahath/npm-scope-prefixer/workflows/build-and-test/badge.svg)
 
 CLI/API tool to prefix scope on npm packages, helpful for deploying to multiple npm registries with different scopes.
