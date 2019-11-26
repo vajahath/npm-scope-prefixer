@@ -1,6 +1,7 @@
-const { scopePrefixer } = require('../../dist/index');
-const { join } = require('path');
-const fs = require('fs').promises;
+import { scopePrefixer } from '../../dist/index';
+import { join } from 'path';
+
+import { promises as fs } from 'fs';
 
 const PKG = join(__dirname, 'sample-pkg.json');
 

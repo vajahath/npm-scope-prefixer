@@ -1,12 +1,13 @@
-const {
+import {
   extractName,
   prefixScope,
   readPackageJson,
   DEFAULT_PKG_PATH,
   updateFile
-} = require('../dist/utils');
-const { join, resolve } = require('path');
-const fs = require('fs').promises;
+} from '../dist/utils';
+import { join, resolve } from 'path';
+
+import { promises as fs } from 'fs';
 
 describe('testing default package path', () => {
   test('should be the root package.json', () => {
