@@ -49,7 +49,7 @@
     "typescript": "^3.7.2"
   },
   "dependencies": {
-    "commander": "^4.0.1",
+    "commander": "^5.0.0",
     "normalize-path": "^3.0.0",
     "update-notifier": "^4.0.0"
   }
